@@ -5,8 +5,7 @@ import javax.swing.JPanel;
 
 public class JButton2{
 	private static int counterLabel1 = 0;
-	public static void main(String[] args)
-    {
+	public static void main(String[] args){
 		JPanel panel = new JPanel();
 
 		JLabel counterLabel = new JLabel("" + counterLabel1);
@@ -25,16 +24,11 @@ public class JButton2{
 		panel.add(counterLabel);
 		panel.add(incrementButton);
 
-		incrementButton.addActionListener(new ActionListener()
-        {
+		incrementButton.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				counterLabel1++;
 				counterLabel.setText("" + counterLabel1);
-
 			}
 		});
-
-
 	}
-
 }

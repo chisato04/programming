@@ -4,12 +4,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class checkbox1 extends JFrame {
+public class checkbox1 extends JFrame{
     private JCheckBox checkBoxFirst, checkBoxSecond, checkBoxThird;
     private JLabel labelCheckboxes;
     private JButton buttonDisplaySelected;
 
-    public checkbox1() {
+    public checkbox1(){
         setTitle("CheckBoxes");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
@@ -25,9 +25,9 @@ public class checkbox1 extends JFrame {
 
         buttonDisplaySelected = new JButton("Display Selected");
         buttonDisplaySelected.setName("buttonDisplaySelected");
-        buttonDisplaySelected.addActionListener(new ActionListener() {
+        buttonDisplaySelected.addActionListener(new ActionListener(){
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e){
                 displaySelected();
             }
         });

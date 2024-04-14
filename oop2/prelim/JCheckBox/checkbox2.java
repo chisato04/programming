@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class checkbox2 extends JFrame implements ActionListener {
+public class checkbox2 extends JFrame implements ActionListener{
 
     private JCheckBox pizzaCheckBox;
     private JCheckBox burgerCheckBox;
@@ -15,7 +15,7 @@ public class checkbox2 extends JFrame implements ActionListener {
     private final double BURGER_PRICE = 80.0;
     private final double TEA_PRICE = 50.0;
 
-    public checkbox2() {
+    public checkbox2(){
         setTitle("Food Kiosk");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
