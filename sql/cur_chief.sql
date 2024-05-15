@@ -5,7 +5,7 @@ last_name varchar2(25);
 manager_id number;
 CURSOR cur_chief IS
 SELECT first_name, last_name, department_name FROM employees e
-INNER JOIN departments d ON d.manager_id = e.employee_id;
+INNER JOIN departments d ON d.manager_id = e.employee_id ORDER by d.department_id;
 r_chief cur_chief%ROWTYPE;
 
 BEGIN
