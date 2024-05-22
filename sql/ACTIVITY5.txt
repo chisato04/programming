@@ -2,4 +2,4 @@
 
 insert into countries values ('PH', 'Philippines', 4);
 
-UPDATE countries set_country_id = 'FG' WHERE country_name = 'Philippines'
+UPDATE countries set country_id = 'FG' WHERE country_name = 'Philippines'
