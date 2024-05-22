@@ -1,0 +1,15 @@
+--ACT2
+
+CREATE OR REPLACE TRIGGER ROW_LEVEL
+BEFORE INSERT OR UPDATE OR DELETE ON countries
+FOR EACH ROW
+DECLARE
+day VARCHAR2(20);
+BEGIN
+day := TO_CHAR(SYSDATE, 'DAY');
+IF day = 'MONDAY' THEN
+raise_application_error(-20105, 'Today is Wednesday - transaction is not allowed today');
+END IF;
+END ROW_LEVEL;
+
+DROP TRIGGER ROW_LEVEL;
